@@ -30,7 +30,7 @@ export default {
 					<img :src="logoHeader" alt="" />
 				</div>
 				<div class="col-12 col-md-10 p-0 d-flex justify-content-around">
-					<a v-for="link in linkMenu" href="">{{ link }}</a>
+					<a v-for="link in linkMenu" href="#">{{ link }}</a>
 				</div>
 			</div>
 		</div>
