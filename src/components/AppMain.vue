@@ -1,19 +1,19 @@
 <script>
-import Content from "./ContentMain.vue";
-import IconDc from "./IconDcMain.vue";
+import ContentMain from "./ContentMain.vue";
+import IconDcMain from "./IconDcMain.vue";
 
 export default {
 	components: {
-		Content,
-		IconDc,
+		ContentMain,
+		IconDcMain,
 	},
 };
 </script>
 
 <template>
 	<main>
-		<Content />
-		<IconDc />
+		<ContentMain />
+		<IconDcMain />
 	</main>
 </template>
 
