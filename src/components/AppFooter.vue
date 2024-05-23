@@ -1,12 +1,20 @@
-<script></script>
+<script>
+import LinkFooter from "./LinkFooter.vue";
+import SocialFooter from "./SocialFooter.vue";
+
+export default {
+	components: {
+		LinkFooter,
+		SocialFooter,
+	},
+};
+</script>
 
 <template>
-	<footer>Io sono AppFooter</footer>
+	<footer>
+		<LinkFooter />
+		<SocialFooter />
+	</footer>
 </template>
 
-<style scoped>
-footer {
-	background-color: lightgray;
-	padding: 1rem;
-}
-</style>
+<style scoped></style>

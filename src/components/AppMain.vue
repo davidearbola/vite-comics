@@ -1,13 +1,20 @@
-<script></script>
+<script>
+import Content from "./ContentMain.vue";
+import IconDc from "./IconDcMain.vue";
+
+export default {
+	components: {
+		Content,
+		IconDc,
+	},
+};
+</script>
 
 <template>
-	<main>Io sono AppMain</main>
+	<main>
+		<Content />
+		<IconDc />
+	</main>
 </template>
 
-<style scoped>
-main {
-	background-color: black;
-	color: white;
-	padding: 1rem;
-}
-</style>
+<style scoped></style>
