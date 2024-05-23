@@ -4,7 +4,7 @@
 	<main>Io sono AppMain</main>
 </template>
 
-<style>
+<style scoped>
 main {
 	background-color: black;
 	color: white;

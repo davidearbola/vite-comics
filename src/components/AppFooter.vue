@@ -4,7 +4,7 @@
 	<footer>Io sono AppFooter</footer>
 </template>
 
-<style>
+<style scoped>
 footer {
 	background-color: lightgray;
 	padding: 1rem;
