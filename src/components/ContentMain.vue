@@ -1,4 +1,8 @@
-<script></script>
+<script>
+export default {
+	name: "ContentMain",
+};
+</script>
 
 <template>
 	<div>=== Contenuto del Main ===</div>

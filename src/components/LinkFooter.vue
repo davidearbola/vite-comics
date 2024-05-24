@@ -1,5 +1,6 @@
 <script>
 export default {
+	name: "LinkFooter",
 	data() {
 		return {
 			linkFooter: [

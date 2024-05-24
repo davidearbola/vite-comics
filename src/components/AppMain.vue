@@ -3,6 +3,7 @@ import ContentMain from "./ContentMain.vue";
 import IconDcMain from "./IconDcMain.vue";
 
 export default {
+	name: "AppMain",
 	components: {
 		ContentMain,
 		IconDcMain,

@@ -1,5 +1,6 @@
 <script>
 export default {
+	name: "IconDcMain",
 	data() {
 		return {
 			iconsDc: [

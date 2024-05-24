@@ -1,5 +1,6 @@
 <script>
 export default {
+	name: "AppHeader",
 	data() {
 		return {
 			logoHeader: "./src/assets/img/dc-logo.png",

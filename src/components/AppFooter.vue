@@ -3,6 +3,7 @@ import LinkFooter from "./LinkFooter.vue";
 import SocialFooter from "./SocialFooter.vue";
 
 export default {
+	name: "AppFooter",
 	components: {
 		LinkFooter,
 		SocialFooter,

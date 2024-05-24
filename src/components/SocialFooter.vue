@@ -1,15 +1,22 @@
 <script>
 export default {
+	name: "SocialFooter",
 	data() {
 		return {
 			socialIcon: [
-				"./src/assets/img/footer-facebook.png",
-				"./src/assets/img/footer-periscope.png",
-				"./src/assets/img/footer-pinterest.png",
-				"./src/assets/img/footer-twitter.png",
-				"./src/assets/img/footer-youtube.png",
+				"footer-facebook.png",
+				"footer-periscope.png",
+				"footer-pinterest.png",
+				"footer-twitter.png",
+				"footer-youtube.png",
 			],
 		};
+	},
+	methods: {
+		getImg(path) {
+			let risultato = new URL("../assets/img/" + path, import.meta.url);
+			return risultato.href;
+		},
 	},
 };
 </script>
@@ -27,7 +34,11 @@ export default {
 							<h5 class="follow_text m-0">FOLLOW US</h5>
 						</div>
 						<div class="col-7 d-flex gap-4">
-							<img v-for="img in socialIcon" :src="img" alt="" />
+							<img
+								v-for="img in socialIcon"
+								:src="getImg(img)"
+								alt=""
+							/>
 						</div>
 					</div>
 				</div>
