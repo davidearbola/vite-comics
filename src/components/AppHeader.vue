@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-	<header class="bg-white p-3">
+	<header class="bg-white">
 		<div class="my_box_container">
 			<div class="row align-items-center">
 				<div
@@ -36,7 +36,9 @@ export default {
 				>
 					<img :src="getImg(logoHeader)" alt="" />
 				</div>
-				<div class="col-12 col-md-10 p-0 d-flex justify-content-around">
+				<div
+					class="col-12 col-md-10 p-0 gap-3 d-flex justify-content-end"
+				>
 					<a v-for="link in linkMenu" href="#">{{ link }}</a>
 				</div>
 			</div>
@@ -53,5 +55,12 @@ a {
 	font-size: 14px;
 	text-decoration: none;
 	color: black;
+	padding: 2rem 0;
+	border-bottom: 2px solid white;
+}
+
+a:hover {
+	border-bottom: 2px solid blue;
+	box-sizing: border-box;
 }
 </style>
