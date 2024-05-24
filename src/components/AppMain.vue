@@ -1,11 +1,11 @@
 <script>
-import ContentMain from "./ContentMain.vue";
+import ComicCardMain from "./ComicCardMain.vue";
 import IconDcMain from "./IconDcMain.vue";
 
 export default {
 	name: "AppMain",
 	components: {
-		ContentMain,
+		ComicCardMain,
 		IconDcMain,
 	},
 };
@@ -14,7 +14,7 @@ export default {
 <template>
 	<main>
 		<div class="jumbotron"></div>
-		<ContentMain />
+		<ComicCardMain />
 		<IconDcMain />
 	</main>
 </template>

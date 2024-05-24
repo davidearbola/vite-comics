@@ -57,6 +57,7 @@ export default {
 	padding: 1rem;
 	border: 2px solid blue;
 	color: white;
+	text-align: center;
 }
 
 .follow_text {
