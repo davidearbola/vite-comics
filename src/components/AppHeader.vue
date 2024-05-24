@@ -3,7 +3,7 @@ export default {
 	name: "AppHeader",
 	data() {
 		return {
-			logoHeader: "./src/assets/img/dc-logo.png",
+			logoHeader: "dc-logo.png",
 			linkMenu: [
 				"CHARACTERS",
 				"COMICS",
@@ -18,6 +18,12 @@ export default {
 			],
 		};
 	},
+	methods: {
+		getImg(path) {
+			let risultato = new URL(`../assets/img/${path}`, import.meta.url);
+			return risultato.href;
+		},
+	},
 };
 </script>
 
@@ -28,7 +34,7 @@ export default {
 				<div
 					class="col-12 col-md-2 text-center text-md-start mb-3 mb-md-0 p-0"
 				>
-					<img :src="logoHeader" alt="" />
+					<img :src="getImg(logoHeader)" alt="" />
 				</div>
 				<div class="col-12 col-md-10 p-0 d-flex justify-content-around">
 					<a v-for="link in linkMenu" href="#">{{ link }}</a>

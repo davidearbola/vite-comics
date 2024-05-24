@@ -6,26 +6,32 @@ export default {
 			iconsDc: [
 				{
 					name: "DIGITAL COMICS",
-					icon: "./src/assets/img/buy-comics-digital-comics.png",
+					icon: "buy-comics-digital-comics.png",
 				},
 				{
 					name: "DC MERCHANDISE",
-					icon: "./src/assets/img/buy-comics-merchandise.png",
+					icon: "buy-comics-merchandise.png",
 				},
 				{
 					name: "SUBSCRIPTION",
-					icon: "./src/assets/img/buy-comics-subscriptions.png",
+					icon: "buy-comics-subscriptions.png",
 				},
 				{
 					name: "COMIC SHOP LOCATOR",
-					icon: "./src/assets/img/buy-comics-shop-locator.png",
+					icon: "buy-comics-shop-locator.png",
 				},
 				{
 					name: "DC POWER VISA",
-					icon: "./src/assets/img/buy-dc-power-visa.svg",
+					icon: "buy-dc-power-visa.svg",
 				},
 			],
 		};
+	},
+	methods: {
+		getImg(path) {
+			let risultato = new URL(`../assets/img/${path}`, import.meta.url);
+			return risultato.href;
+		},
 	},
 };
 </script>
@@ -37,7 +43,7 @@ export default {
 				v-for="iconElement in iconsDc"
 				class="col-auto py-3 d-flex align-items-center gap-2"
 			>
-				<img :src="iconElement.icon" />
+				<img :src="getImg(iconElement.icon)" />
 				<span>{{ iconElement.name }}</span>
 			</div>
 		</div>
