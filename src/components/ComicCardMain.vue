@@ -94,7 +94,7 @@ export default {
 						<img :src="comic.thumb" alt="" />
 					</div>
 					<div>
-						<p class="mb-0">{{ comics[0].series.toUpperCase() }}</p>
+						<p class="mb-0">{{ comic.series.toUpperCase() }}</p>
 						<span>{{ comic.type }}</span
 						><br />
 						<span>{{ comic.price }}</span
