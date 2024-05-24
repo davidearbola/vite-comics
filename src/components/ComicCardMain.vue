@@ -1,6 +1,11 @@
 <script>
+import ComicsCard from "./ComicsCard.vue";
+
 export default {
 	name: "ComicCardMain",
+	components: {
+		ComicsCard,
+	},
 	data() {
 		return {
 			comics: [
@@ -86,21 +91,7 @@ export default {
 	<div class="full_box">
 		<div class="my_box_container py-5 position-relative">
 			<div class="row mb-5">
-				<div
-					v-for="comic in comics"
-					class="col-6 col-md-4 col-lg-2 p-2"
-				>
-					<div class="mb-3">
-						<img :src="comic.thumb" alt="" />
-					</div>
-					<div>
-						<p class="mb-0">{{ comic.series.toUpperCase() }}</p>
-						<span>{{ comic.type }}</span
-						><br />
-						<span>{{ comic.price }}</span
-						><br />
-					</div>
-				</div>
+				<ComicsCard v-for="comic in comics" :card="comic" />
 			</div>
 			<div class="comic_label">CURRENT SERIES</div>
 			<div class="text-center">
@@ -114,17 +105,6 @@ export default {
 .full_box {
 	background-color: #222;
 	color: white;
-}
-
-img {
-	width: 100%;
-	aspect-ratio: 1;
-	object-fit: cover;
-	object-position: 0% 0%;
-}
-
-span {
-	font-size: 12px;
 }
 
 .comic_label {
